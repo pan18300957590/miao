@@ -88,9 +88,11 @@
   <hr>
   <div>
     <h1>Google搜索</h1>
-    <form method="get" action="#">
-      <input type="text" name="search">
-      <button>在新窗口打开搜索结果</button>
+    <form target="_blank" action="https://www.google.com.hk/search">
+      <input type="text" name="sou">
+      <input style="display: none;" type="text" name="ie" value="UTF-8">
+      <input style="display: none;" type="text" name="sourceid" value="UTF">
+      <input type="submit" value="点击搜索">
     </form>
     <hr>
   </div>
