@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    td:nth-child(2) {
+      background-color: red;
+    }
+
+    tr td {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>lorem</h1>
+  <h2>lorem,ipsum.</h2>
+  <h3>lorem,ipsun dolor.</h3>
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, incidunt? Facere laudantium voluptatibus sint
+      illum, veritatis voluptatum consectetur magnam et accusamus, esse voluptatem iure hic cupiditate repellat in
+      officiis est.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, numquam error. Cum totam explicabo, possimus
+      odit, dolorem quibusdam accusantium laudantium fuga maiores doloremque eos qui aperiam. Repellendus dolore totam
+      exercitationem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magni officiis hic nisi ad, rerum fuga
+      perspiciatis placeat excepturi sit provident facere quaerat minus, dolorem accusantium eos repudiandae ullam.
+      Molestias?</p>
+    <a href="https:https://www.jd.com/" target="_blank"> 在新窗口打开京东</a>
+    <a href="mailto:2128668064@qq.com">点我发邮件</a>
+    <a href="#span">跳到页面底部</a>
+    <a href="./cat.jpg" download="cat.jpg">点我下载文件</a>
+  </div>
+  <div>
+    <img
+      src="https://drscdn.500px.org/photo/229389427/m%3D1170/v2?user_id=7012987&webp=true&sig=196fa0c161aa562478d08571764872f7d69a346c3c0b2e12aa00e2c6414eb28b"
+      alt="" width="300px" height="300px">
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <marquee direction="left" onmouseover="stop()" onmouseover="start()">piao</marquee>
+    <p>这几种强调<strong>有什么</strong><b>区别？</b><u>这个？</u>这个？</p>
+    &lt;!-- 这是一句注释 --&gt;
+    <pre>
+          function a(){
+            rrturn 8
+          }
+      </pre>
+  </div>
+  <hr>
+  <div>
+    <ul>
+      <li>小学</li>
+      <ol>
+        <li>一年级</li>
+        <ol>
+          <li>上学期</li>
+          <li>下学期</li>
+        </ol>
+      </ol>
+      <ol>
+        <li>二年级</li>
+        <li>三年级</li>
+      </ol>
+      <li>中学</li>
+      <li>大学</li>
+    </ul>
+  </div>
+  <div>
+    <dl>
+      <dt>班级</dt>
+      <dd>三年级二班</dd>
+      <dt>老师</dt>
+      <dd>张老师</dd>
+      <dd>李老师</dd>
+      <dd>王老师</dd>
+      <dt>学生</dt>
+      <dd>小明</dd>
+      <dd>豆豆</dd>
+    </dl>
+  </div>
+  <hr>
+  <div>
+    <h1>Google搜索</h1>
+    <form method="get" action="#">
+      <input type="text">
+      <button onclick="">在新窗口打开搜索结果</button>
+    </form>
+    <hr>
+  </div>
+  <div>
+    <p>个人信息调查表</p>
+    <dt>性别</dt>
+    <dd>
+      <input type="radio" name="gender">男
+      <input type="radio" name="gender">女
+    </dd>
+    <dt>年龄</dt>
+    <dd>
+      <select>
+        <option style="display: none; ">请选择</option>
+        <optgroup label="少年">
+          <option>l岁到6岁</option>
+          <option>6岁到12岁</option>
+        </optgroup>
+        <optgroup label="青年">
+          <option>12岁到15岁</option>
+          <option>16岁到18岁</option>
+        </optgroup>
+        <optgroup label="少年">
+          <option>l岁到6岁</option>
+          <option>6岁到12岁</option>
+        </optgroup>
+      </select>
+    </dd>
+    <dt>生日</dt>
+    <dd><input type="date"></dd>
+    <dt>生辰</dt>
+    <dd><input type="time"></dd>
+    <dt>照片</dt>
+    <dd><input type="file"></dd>
+    <td>自我介绍</td>
+    <dd><textarea cols="30" rows="10" placeholder="这里输入你的个人介绍" style="resize: none;"></textarea></dd>
+    <fieldset>
+      <legend>这里全部禁用了</legend>
+      <input type="text" disabled>
+      <input style="margin-left:8px;" type="text" disabled>
+      <input style="margin-left:8px;" type="text" disabled>
+    </fieldset>
+    <input type="submit" value="提交"><input type="reset" value="重置">
+  </div>
+  <hr>
+  <table border="1px" cellspacing="0" cellpadding="0">
+    <tr>
+      <th>编号</th>
+      <th>品名</th>
+      <th>进价</th>
+      <th>出价</th>
+    </tr>
+    <tr>
+      <td>aaa</td>
+      <td>a</td>
+      <td rowspan="2">a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+    </tr>
+  </table>
+  <hr>
+  <img src="https://drscdn.500px.org/photo/174778125/m%3D1170_k%3D1/2841ccf2a3720e8e794a6a6930f6ff2c" alt=""
+    width="300px" height="400px">
+  <hr>
+  <p><a href="https://www.mi.com/index.html">小米</a></p>
+  <iframe src="https://nodejs.org/zh-cn/" frameborder="0"></iframe>
+  <p><strong>aaaaa&nbsp;&nbsp;&nbsp;bbbbb</strong></p>
+  <p style="font-size:10px;">aaaaa&nbsp;&nbsp;&nbsp;bbbbb</p>
+  <p id="span">
+    &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+    &lt;span&gt;&lt;/span&gt;</p>
+
+</body>
+
+</html>
