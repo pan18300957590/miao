@@ -89,9 +89,10 @@
   <div>
     <h1>Google搜索</h1>
     <form target="_blank" action="https://www.google.com.hk/search">
-      <input type="text" name="sou">
-      <input style="display: none;" type="text" name="ie" value="UTF-8">
-      <input style="display: none;" type="text" name="sourceid" value="UTF">
+      <input type="text" name="q">
+
+      <input  type="hidden" name="ie" value="UTF-8">
+      <input  type="hidden" name="sourceid" value="UTF">
       <input type="submit" value="点击搜索">
     </form>
     <hr>
@@ -126,7 +127,9 @@
     <dt>生辰</dt>
     <dd><input type="time"></dd>
     <dt>照片</dt>
-    <dd><input type="file"></dd>
+    <dd>
+      <label><input hidden name="avatar" type="file">上传头像</label>
+    </dd>
     <td>自我介绍</td>
     <dd><textarea cols="30" rows="10" placeholder="这里输入你的个人介绍" style="resize: none;"></textarea></dd>
     <fieldset>
@@ -139,39 +142,46 @@
   </div>
   <hr>
   <table border="1px" cellspacing="0" cellpadding="0">
-    <tr>
-      <th>编号</th>
-      <th>品名</th>
-      <th>进价</th>
-      <th>出价</th>
-    </tr>
-    <tr>
-      <td>aaa</td>
-      <td>a</td>
-      <td rowspan="2">a</td>
-      <td>a</td>
-    </tr>
-    <tr>
-      <td>a</td>
-      <td>a</td>
-      <td>a</td>
-    </tr>
-    <tr>
-      <td>a</td>
-      <td>a</td>
-      <td>a</td>
-      <td>a</td>
-    </tr>
-    <tr>
-      <td>a</td>
-      <td>a</td>
-      <td>a</td>
-      <td>a</td>
-    </tr>
-  </table>
+    <thead>
+      <tr>
+        <th>编号</th>
+        <th>品名</th>
+        <th>进价</th>
+        <th>出价</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>aaa</td>
+        <td>a</td>
+        <td rowspan="2">a</td>
+        <td>a</td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td>a</td>
+        <td>a</td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td>a</td>
+        <td>a</td>
+        <td>a</td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td>a</td>
+        <td>a</td>
+        <td>a</td>
+      </tr>
+  </tbody>
+    </table>
   <hr>
-  <img src="https://drscdn.500px.org/photo/174778125/m%3D1170_k%3D1/2841ccf2a3720e8e794a6a6930f6ff2c" alt=""
+  <img usemap="#maps" src="https://drscdn.500px.org/photo/174778125/m%3D1170_k%3D1/2841ccf2a3720e8e794a6a6930f6ff2c" alt=""
     width="300px" height="400px">
+    <map name="maps">
+      <area target="_blank" shape="rect" coords="79,115,250,213" href="https://www.zhihu.com/topic/19551387/intro" alt="">
+    </map>
   <hr>
   <p><a target="skip"  href="https://www.mi.com/index.html">小米</a></p>
   <iframe name="skip" src="https://nodejs.org/zh-cn/" frameborder="0"></iframe>
