@@ -13,11 +13,11 @@
     [tabindex="1"]:hover{
       color: red;
     }
+    [tabindex="1"]:focus{
+     color: blue;
+    }
     [tabindex="1"]:active{
       color: green;
-    }
-    [tabindex="1"]:focus{
-      outline-color: blue;
     }
     p>span{
       color:red;
@@ -35,7 +35,7 @@
     a:link{
       color: pink;
     }
-    a.mail{
+    a[href^="mailto:" i]{
       color: blue;
     }
     a.yell{
@@ -49,22 +49,36 @@
       color: red;
     }
 
-    ul li.number1{
+    .b>ul li:nth-child(-n+25){
       color: red;
     }
-    ul li.number2{
-      color: green;
-    }
-    ul li.number3{
+    .b ul li:nth-child(n+35){
       color: blue;
     }
+    .b ul li:nth-child(n+51){
+      color: rgb(0, 0, 0);
+    }
+    .b ul li:nth-child(n+65){
+      color: green;
+    }
 
-    div.prime ul li:nth-child(odd){
+    /* div.prime ul li:nth-child(odd){
       color: #008c8c;
     }
     div.prime ul li:nth-child(even){
       color:chartreuse;
+    } */
+    .prime li:nth-child(1),
+    .prime li:nth-child(2n+4),
+    .prime li:nth-child(3n+9),
+    .prime li:nth-child(5n+25),
+    .prime li:nth-child(7n+49){
+      color: #008c8c;
     }
+    .prime li :not(.prime li:nth-child(2n+4)):not(.prime li:nth-child(3n+9)):not(.prime li:nth-child(5n+25)):not(.prime li:nth-child(7n49)){
+      color: cornflowerblue;
+    }
+
   </style>
 </head>
 
@@ -94,12 +108,12 @@
     <a href="https://www.jd.com/">jd</a>
     <a href="https://www.lksdjfwief.com/">你肯定没访问过我</a>
     <a href="mailto.html">这不是邮件链接</a>
-    <a class="mail" href="MAILTO:a@b.com">给我发邮件</a>
-    <a class="mail" href="mailto:a@b.com">给我发邮件</a>
-    <a class="yell" href="tel:12345678">给我打电话</a>
-    <a class="yell" href="tel:12345678">给我打电话</a>
-    <a class="ziti" href="aaa.pdf">下载pdf</a>
-    <a class="ziti" href="aaa.PDF">下载pdf</a>
+    <a href="MAILTO:a@b.com">给我发邮件</a>
+    <a href="mailto:a@b.com">给我发邮件</a>
+    <a href="tel:12345678">给我打电话</a>
+    <a href="tel:12345678">给我打电话</a>
+    <a href="aaa.pdf">下载pdf</a>
+    <a href="aaa.PDF">下载pdf</a>
   </div>
 
   <div class="a">
@@ -125,31 +139,31 @@
     <p>让65及以上的元素为绿色</p>
     <p>让35-50的元素为蓝色</p>
     <ul>
-      <li class="number1">01</li>
-      <li class="number1">02</li>
-      <li class="number1">03</li>
-      <li class="number1">04</li>
-      <li class="number1">05</li>
-      <li class="number1">06</li>
-      <li class="number1">07</li>
-      <li class="number1">08</li>
-      <li class="number1">09</li>
-      <li class="number1">10</li>
-      <li class="number1">11</li>
-      <li class="number1">12</li>
-      <li class="number1">13</li>
-      <li class="number1">14</li>
-      <li class="number1">15</li>
-      <li class="number1">16</li>
-      <li class="number1">17</li>
-      <li class="number1">18</li>
-      <li class="number1">19</li>
-      <li class="number1">20</li>
-      <li class="number1">21</li>
-      <li class="number1">22</li>
-      <li class="number1">23</li>
-      <li class="number1">24</li>
-      <li class="number1">25</li>
+      <li>01</li>
+      <li>02</li>
+      <li>03</li>
+      <li>04</li>
+      <li>05</li>
+      <li>06</li>
+      <li>07</li>
+      <li>08</li>
+      <li>09</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+      <li>21</li>
+      <li>22</li>
+      <li>23</li>
+      <li>24</li>
+      <li>25</li>
       <li>26</li>
       <li>27</li>
       <li>28</li>
@@ -159,22 +173,22 @@
       <li>32</li>
       <li>33</li>
       <li>34</li>
-      <li class="number3">35</li>
-      <li class="number3">36</li>
-      <li class="number3">37</li>
-      <li class="number3">38</li>
-      <li class="number3">39</li>
-      <li class="number3">40</li>
-      <li class="number3">41</li>
-      <li class="number3">42</li>
-      <li class="number3">43</li>
-      <li class="number3">44</li>
-      <li class="number3">45</li>
-      <li class="number3">46</li>
-      <li class="number3">47</li>
-      <li class="number3">48</li>
-      <li class="number3">49</li>
-      <li class="number3">50</li>
+      <li>35</li>
+      <li>36</li>
+      <li>37</li>
+      <li>38</li>
+      <li>39</li>
+      <li>40</li>
+      <li>41</li>
+      <li>42</li>
+      <li>43</li>
+      <li>44</li>
+      <li>45</li>
+      <li>46</li>
+      <li>47</li>
+      <li>48</li>
+      <li>49</li>
+      <li>50</li>
       <li>51</li>
       <li>52</li>
       <li>53</li>
@@ -184,47 +198,47 @@
       <li>57</li>
       <li>58</li>
       <li>59</li>
-      <li class="number2">60</li>
-      <li class="number2">61</li>
-      <li class="number2">62</li>
-      <li class="number2">63</li>
-      <li class="number2">64</li>
-      <li class="number2">65</li>
-      <li class="number2">66</li>
-      <li class="number2">67</li>
-      <li class="number2">68</li>
-      <li class="number2">69</li>
-      <li class="number2">70</li>
-      <li class="number2">71</li>
-      <li class="number2">72</li>
-      <li class="number2">73</li>
-      <li class="number2">74</li>
-      <li class="number2">75</li>
-      <li class="number2">76</li>
-      <li class="number2">77</li>
-      <li class="number2">78</li>
-      <li class="number2">79</li>
-      <li class="number2">80</li>
-      <li class="number2">81</li>
-      <li class="number2">82</li>
-      <li class="number2">83</li>
-      <li class="number2">84</li>
-      <li class="number2">85</li>
-      <li class="number2">86</li>
-      <li class="number2">87</li>
-      <li class="number2">88</li>
-      <li class="number2">89</li>
-      <li class="number2">90</li>
-      <li class="number2">91</li>
-      <li class="number2">92</li>
-      <li class="number2">93</li>
-      <li class="number2">94</li>
-      <li class="number2">95</li>
-      <li class="number2">96</li>
-      <li class="number2">97</li>
-      <li class="number2">98</li>
-      <li class="number2">99</li>
-      <li class="number2">100</li>
+      <li>60</li>
+      <li>61</li>
+      <li>62</li>
+      <li>63</li>
+      <li>64</li>
+      <li>65</li>
+      <li>66</li>
+      <li>67</li>
+      <li>68</li>
+      <li>69</li>
+      <li>70</li>
+      <li>71</li>
+      <li>72</li>
+      <li>73</li>
+      <li>74</li>
+      <li>75</li>
+      <li>76</li>
+      <li>77</li>
+      <li>78</li>
+      <li>79</li>
+      <li>80</li>
+      <li>81</li>
+      <li>82</li>
+      <li>83</li>
+      <li>84</li>
+      <li>85</li>
+      <li>86</li>
+      <li>87</li>
+      <li>88</li>
+      <li>89</li>
+      <li>90</li>
+      <li>91</li>
+      <li>92</li>
+      <li>93</li>
+      <li>94</li>
+      <li>95</li>
+      <li>96</li>
+      <li>97</li>
+      <li>98</li>
+      <li>99</li>
+      <li>100</li>
     </ul>
   </div>
 
