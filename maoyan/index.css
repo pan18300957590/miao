@@ -30,6 +30,7 @@ body {
 /* 行高 */
 .header-top .header-middle {
   line-height: 73px;
+  margin-left: 33px;
 }
 
 /* 给logo设置宽高和行高 */
@@ -344,6 +345,7 @@ div.main nav.nav a:first-child {
 } */
 /* 页脚部分 */
 .footer-down {
+  width: 100%;
   background-color: #262426;
   color: #ccc;
   text-align: center;
