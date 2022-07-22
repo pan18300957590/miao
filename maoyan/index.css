@@ -319,7 +319,7 @@ body {
   position: absolute;
   left: 169px;
   top: 21px;
-  background-image: url(/img/sousuo.png);
+  background-image: url(./img/sousuo.png);
   background-position-x: -2px;
   background-position-y: -1px;
   cursor: pointer;
