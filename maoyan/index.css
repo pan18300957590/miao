@@ -1,0 +1,666 @@
+body {
+  color: #333;
+}
+/* 滚动条宽度 */
+::-webkit-scrollbar {
+  width: 15px;
+}
+/* 滚动条滚动块的样式 */
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
+/* 清除浮动 */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* 给logo设置宽高和行高 */
+.header-top .header-middle .header-logo {
+  width: 113px;
+  height: 40px;
+  line-height: 90px;
+}
+
+/* 隐藏 */
+.header-top .header-middle .header-logo h1>span {
+  display: none;
+}
+
+/* 导航栏1 */
+.header-top {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+/* 导航栏1浮动 */
+.header-top .header-qn,
+.header-logo,
+.header-nav,
+.header-app,
+.header-text,
+.header-img,
+.header-top .header-nav .clearfix a {
+  float: left;
+  margin: 0 7px;
+}
+
+/* 行高 */
+.header-top .header-middle {
+  line-height: 75px;
+  margin-left: 15px;
+}
+
+
+/* 设置字体大小 */
+.header-top .header-middle .header-centent .header-nav,
+.header-app,
+.header-text {
+  font-size: 18px;
+}
+
+/* 黔南右边设置小三角形 */
+.header-top .header-middle .header-centent .header-qn .triangle::after {
+  content: "";
+  display: inline-block;
+  border-top: 6px solid rgb(124, 124, 124);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  left: 57px;
+  top: 35px;
+}
+
+/* 黔南样式 */
+.header-top .header-middle .header-centent .header-qn {
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+  width: 75px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+/* 鼠标移动到黔南区域时显示左右外边线 */
+.header-top .header-middle .header-centent .header-qn .qn:hover {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+
+/* 黔南二级菜单样式 */
+.header-centent .header-qn .qn .qn-menu {
+  width: 510px;
+  height: 344px;
+  border: 1px solid #e5e5e5;
+  text-align: left;
+  /* 行高为默认值 */
+  line-height: initial;
+  position: absolute;
+  background-color: #fff;
+  /* 溢出自动隐藏 */
+  overflow: auto;
+  /* 鼠标为默认样式 */
+  cursor: default;
+  margin-left: -1px;
+  /* 隐藏 */
+  display: none;
+}
+
+/* 显示隐藏 */
+.header-centent .header-qn .qn:hover .qn-menu {
+  display: block;
+}
+
+/* 浮动 */
+.qn-menu-container .container-title,
+.qn-menu-container .container-title-list {
+  float: left;
+}
+
+/* 设置宽度、左右内边距 */
+.qn-menu-container .qn-area {
+  width: 472px;
+  /* padding: 0 9px; */
+}
+
+.qn-menu-container .container-title-list {
+  width: 452px;
+}
+
+/* 给li设置宽高样式 */
+.qn-menu-container .container-title-list ul li {
+  float: left;
+  margin-left: 5px;
+  width: 70px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.qn-menu-container .container-title-list ul li:hover {
+  background-color: #ef4238;
+}
+
+.header-centent .header-qn .qn .qn-menu .qn-menu-a {
+  padding: 20px;
+  border-bottom: 1px dotted #e5e5e5;
+  /* 鼠标为默认样式 */
+  cursor: default;
+}
+
+.qn-menu-container {
+  padding-left: 20px;
+  padding: 15px 0 0 20px;
+}
+
+.qn-menu-container .container-title {
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 20px;
+  /* 鼠标为默认样式 */
+  cursor: default;
+}
+
+/* 鼠标移到上面时显示一条白线覆盖边框 */
+.header-centent .header-qn .qn:hover::after {
+  content: "";
+  display: inline-block;
+  width: 98%;
+  height: 1px;
+  background: #fff;
+  /* 绝对定位 */
+  position: absolute;
+  bottom: -1px;
+  left: 0.8px;
+}
+
+
+
+/* 首页-商城超连接hover伪类 */
+.header-top .header-middle .header-centent .header-nav a:hover {
+  color: #ef4238;
+}
+
+.header-top .header-middle .header-centent .header-nav a {
+  width: 62px;
+  text-align: center;
+}
+
+.header-top .header-middle .header-centent .header-nav nav>a:nth-child(2) {
+  background-color: #ef4238;
+  color: #fff;
+}
+
+/* 添加手机背景图 */
+.header-top .header-middle .header-centent .header-app {
+  background-image: url("./img/shouji.png");
+  background-repeat: no-repeat;
+  background-position-x: 7px;
+  background-position-y: 25px;
+  position: relative;
+  width: 128px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* App下载设置小三角形 */
+.header-top .header-middle .header-centent .header-app .triangle-app:after {
+  content: "";
+  display: inline-block;
+  border-top: 6px solid rgb(124, 124, 124);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  left: 106px;
+  top: 35px;
+}
+
+/* 鼠标移动到App下载区域时显示左右外边线 */
+.header-top .header-middle .header-centent .header-app .app:hover {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+
+/* APP下载子菜单、隐藏 */
+.header-app .app-qrcode {
+  border: 1px solid #e5e5e5;
+  position: absolute;
+  width: 128px;
+  background: #fff;
+  margin-left: -1px;
+  display: none;
+}
+
+/* APP下载子菜单、显示 */
+.header-app:hover .app-qrcode {
+  display: block;
+}
+
+/* 定宽 */
+.header-app .app-qrcode .qrcode-img {
+  height: 90px;
+  margin-top: 15px;
+}
+
+/* 上外边距 */
+.header-app .app-qrcode .qrcode-img img {
+  margin-top: 5px;
+}
+
+/* 底部两行字设置内边距 */
+.header-app .app-qrcode .app-title {
+  padding: 20px 0 5px 0;
+}
+
+/* p元素设置样式 */
+.header-app .app-qrcode .app-download,
+.header-app .app-qrcode .app-choose {
+  line-height: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.header-app .app-qrcode .app-choose {
+  color: #999;
+}
+
+/* 鼠标移动到上面是显示一条白线覆盖 */
+.header-app .app:hover::after {
+  content: "";
+  width: 98.8%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -1px;
+  left: 0.8px;
+}
+
+
+
+/* 本框设置相对定位 */
+.header-text {
+  position: relative;
+}
+
+/* 文本框样式 */
+.header-text input {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 205px;
+  height: 37px;
+  font-size: 14px;
+  text-indent: 1em;
+}
+
+/* 文本框内添加背景图，圆形红色背景 */
+.header-text .sousuo-text {
+  background-color: red;
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+  position: absolute;
+  left: 169px;
+  top: 21px;
+  background-image: url(/img/sousuo.png);
+  background-position-x: -2px;
+  background-position-y: -1px;
+  cursor: pointer;
+}
+
+/* 用户图标设置样式 */
+.header-img {
+  height: 75px;
+  width: 80px;
+  position: relative;
+  line-height: 103px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* 给包裹图片的div设置高度 */
+.header-img .header-image {
+  height: 75px;
+}
+
+/* 图用户标设置宽度 */
+.header-img img {
+  width: 40px;
+}
+
+/* 图用户标设置小三角形 */
+.header-img .header-triangle::after {
+  content: "";
+  display: inline-block;
+  border-top: 6px solid rgb(124, 124, 124);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  left: 66px;
+  top: 36px;
+}
+
+/* 鼠标移动到图用户标区域时显示左右外边线 */
+.header-img .header-image:hover {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+/* 用户子菜单、隐藏 */
+.header-img .header-image .landing {
+  position: absolute;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  width: 80px;
+  height: 50px;
+  margin-top: -28px;
+  line-height: 50px;
+  cursor: default;
+  margin-left: -1px;
+  display: none;
+}
+
+/* 显示隐藏 */
+.header-img .header-image:hover .landing {
+  display: block;
+}
+
+/* 超连接hover伪类样式 */
+.header-img .header-image .landing a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* 鼠标移动到上面是显示一条白线覆盖 */
+.header-img .header-image:hover::after {
+  content: "";
+  display: inline-block;
+  width: 97.7%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 0.9px;
+  bottom: -1px;
+}
+
+
+
+
+/* 导航栏2 */
+div.main {
+  background-color: #47464a;
+  height: 60px;
+  min-width: 1200px;
+  text-align: center;
+}
+
+.nav a {
+  color: #999;
+  line-height: 60px;
+  font-size: 16px;
+  margin: 0 40px;
+}
+
+.nav a:hover {
+  color: #e5e5e5;
+}
+
+div.main nav.nav a:first-child {
+  color: red;
+}
+
+/* 生成一个三角形状(伪类元素) */
+.main .nav .hot-showing:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 15px solid #fff;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: absolute;
+  left: 39%;
+  top: 130px;
+}
+
+/* 主体部分 */
+.container-type {
+  width: 1120px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.container-type .type {
+  line-height: 30px;
+  padding: 0 25px;
+  border: 1px solid #e5e5e5;
+}
+
+/* 类型、区域加下划线 */
+.container-type .type .choose-item {
+  padding: 10px 5px;
+  border-bottom: 1px dotted #e5e5e5;
+}
+
+/* 去掉年代的下划线 */
+.container-type .type .choose-item.on-line {
+  border: none;
+}
+
+/* 左浮动 */
+.container-type .type .left {
+  float: left;
+  color: #999;
+}
+
+/* 右浮动 */
+.container-type .type .right {
+  float: left;
+  width: 1020px;
+}
+
+/* li左浮动 */
+.container-type .type .right li {
+  float: left;
+  margin: 0 10px;
+  padding: 0 6px;
+}
+
+/* 鼠标移入伪类为红色 */
+.container-type .type .right li a:hover {
+  color: red;
+}
+
+/* 第一个列表子元素li背景颜色为红色 */
+.container-type .type .right .selected {
+  background-color: red;
+  color: #fff;
+  border-radius: 14px;
+  cursor: default;
+}
+
+
+
+/* 上外边距 */
+.myredio {
+  margin-top: 50px;
+}
+
+/* 浮动 、离左边的边距*/
+.myredio .mychecked {
+  float: left;
+  margin-left: 35px;
+}
+
+/* 第一个排序离左边的距离为零 */
+.myredio .mychecked.left {
+  margin-left: 0px;
+}
+
+/* 新建一个圆形按钮、转为行内块元素设置宽高 */
+.myredio .mychecked .radio-item .after {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  vertical-align: -3px;
+  /* 相对定位 */
+  position: relative;
+}
+
+/* 鼠标移动样式 */
+.myredio .mychecked .radio-item {
+  cursor: pointer;
+}
+
+/* 鼠标移动到上面的伪类样式边框颜色 */
+.myredio .mychecked .radio-item .after:hover {
+  border-color: #999;
+}
+
+/* :checked伪类、点击按钮时显示的边框 */
+.myredio .mychecked .radio-item input:checked+.after {
+  border: 6px solid red;
+}
+
+/* :checked伪类、点击按钮时显示 ::after伪元素背景色*/
+.myredio .mychecked .radio-item input:checked+.after::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  /* 绝对定位 */
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto 0;
+}
+
+/* 隐藏input元素 */
+.myredio .mychecked .radio-item input {
+  display: none;
+}
+
+/* 电影海报部分 */
+.container-movie {
+  width: 1120px;
+  margin: 20px 0;
+}
+
+.container-movie .movie-list {
+  float: left;
+  margin: 10px 32px 10px 0;
+  text-align: center;
+  line-height: 32px;
+}
+
+/* 给图片定宽 */
+.container-movie .movie-list .movie-poster img {
+  width: 160px;
+}
+
+/* 选中第六张图片 */
+.container-movie .movie-list:nth-child(6n) {
+  margin-right: 0px;
+}
+
+/* 平分字体样式 */
+.container-movie .movie-list .movie-grade p {
+  color: #ffb400;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* 选中第一个字 */
+.container-movie .movie-list .movie-grade p:first-letter {
+  font-size: 22px;
+}
+
+/* 分页字体大小 */
+.paging {
+  font-size: 16px;
+  margin-top: -20px;
+  position: relative;
+}
+
+/* 距离左边 */
+.paging ul {
+  margin-left: 20%;
+}
+
+.paging ul li {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 8px;
+  border: 1px solid rgb(155, 150, 150);
+  text-align: center;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+/* 鼠标移入伪类样式 */
+.paging ul li:hover {
+  color: #fff;
+  background-color: #999;
+}
+
+/* 默认选中 */
+.paging ul li:first-child {
+  color: #fff;
+  background-color: #999;
+}
+
+/* 分页小三角形 */
+/* .paging .paging-a::after{
+  content: "";
+  border-top: 7px solid #fff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  left: 22%;
+  top: -2px;
+} */
+/* 页脚部分 */
+footer {
+
+  min-width: 1200px;
+  text-align: center;
+  color: #ccc;
+  background-color: #262426;
+  padding: 55px 0;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+.footer-down .footer-centent .section .section-a {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* 超连接为红色 */
+.footer-down .footer-centent .section .section-a a {
+  color: #ef4238;
+}
+
+/* 鼠标移入时显示下划线 */
+.footer-down .footer-centent p a:hover {
+  text-decoration: underline;
+}
+
+.footer-down .footer-img img {
+  margin-left: 10px;
+}
