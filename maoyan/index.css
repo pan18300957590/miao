@@ -187,6 +187,7 @@ body {
   position: absolute;
   bottom: -1px;
   left: 0.8px;
+  z-index: 2;
 }
 
 
