@@ -1,0 +1,1431 @@
+/* 清除浮动 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* header第一部分 */
+.header-logo {
+  background: #EDF4EC;
+}
+
+.header-logo .logo {
+  height: 35px;
+  line-height: 45px;
+  padding-left: 10px;
+}
+
+/* 图标定宽高 */
+.header-logo .logo img {
+  width: 102px;
+  height: 20px;
+}
+
+/* header第二部分 */
+.db-nav {
+  height: 90px;
+  background-color: #fff;
+}
+
+.db-nav .db-container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.db-nav .db-left {
+  width: 375px;
+  float: left;
+}
+
+.db-nav .db-navright {
+  float: right;
+}
+
+.db-nav .db-left .db-title {
+  float: left;
+  line-height: 90px;
+}
+
+.db-nav .db-left .db-text {
+  float: right;
+  position: relative;
+}
+
+.db-nav .db-left .db-title,
+.db-nav .db-left .db-text {
+  line-height: 90px;
+}
+
+
+/* 豆瓣网logo */
+
+.db-nav .db-left .db-title h1 {
+  width: 73px;
+  background-image: url(./img/logo-img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* 不显示豆瓣网 */
+  text-indent: -999em;
+  background-position-y: 34px;
+}
+
+/* 搜索框样式 */
+.db-nav .db-left .db-text input {
+  border: 1px solid #ccc;
+  font-size: 13px;
+  width: 275px;
+  height: 30px;
+  padding: 0 25px 0 10px;
+}
+
+/* 预提示文本字体颜色 */
+.db-nav .db-left .db-text input::placeholder {
+  color: #ccc;
+}
+
+/* 搜索小图标按钮样式 */
+.db-nav .db-left .db-text .suo {
+  width: 15px;
+  height: 15px;
+  background-image: url("./img/suo1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 3px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.db-nav .db-navright {
+  width: 550px;
+}
+
+.db-nav .db-navright ul li {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+  line-height: 90px;
+}
+
+/* 设置字体颜色 */
+.db-nav .db-navright ul .color1 {
+  color: rgb(88, 64, 41);
+}
+
+.db-nav .db-navright ul .color2 {
+  color: rgb(43, 144, 207);
+}
+
+.db-nav .db-navright ul .color3 {
+  color: rgb(243, 127, 0);
+}
+
+.db-nav .db-navright ul .color4 {
+  color: rgb(232, 82, 5);
+}
+
+.db-nav .db-navright ul .color5 {
+  color: rgb(15, 149, 157);
+}
+
+.db-nav .db-navright ul .color6 {
+  color: rgb(56, 158, 172);
+}
+
+.db-nav .db-navright ul .color7 {
+  color: rgb(157, 215, 198);
+}
+
+.db-nav .db-navright ul .color8 {
+  color: rgb(73, 73, 73);
+}
+
+.db-nav .db-navright ul .color8>a {
+  position: relative;
+}
+
+.db-nav .db-navright ul .color9 {
+  color: rgb(68, 136, 62);
+}
+
+/* 给间设置一个圆点  */
+.db-nav .db-navright .color8 span.circle {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  border: 2px solid rgb(255, 102, 22);
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 23px;
+  top: 3px;
+}
+
+
+
+/* 海波、登陆部分 */
+
+.db-landing {
+  background: rgb(237, 244, 237);
+}
+
+/* 公共高度 */
+.db-landing,
+.db-landing .landing-container,
+.db-landing .landing-container .bgimage,
+.db-landing .landing-container .landing,
+.db-landing .landing-container .landing .db-download {
+  height: 300px;
+}
+
+.db-landing .landing-container {
+  width: 1100px;
+  margin-left: 135px;
+}
+
+/* 手机背景图样式 */
+.db-landing .landing-container .bgimage {
+  width: 585px;
+  background-image: url(./img/banner.jpg);
+  background-size: 649px 300px;
+  background-repeat: no-repeat;
+  background-position-x: -24px;
+  float: left;
+}
+
+/* 下载app左浮动 */
+.db-landing .landing-container .landing {
+  float: left;
+  width: 515px;
+}
+
+.db-landing .landing-container .landing .db-download {
+  width: 210px;
+  padding-top: 90px;
+  float: left;
+}
+
+.db-landing .landing-container .landing .db-download .version {
+  font-size: 25px;
+  color: #111;
+}
+
+.db-landing .landing-container .landing .db-download .version .q {
+  padding: 0 10px;
+}
+
+.db-landing .landing-container .landing .db-download .download-app,
+.db-landing .landing-container .landing .db-download .qrcode {
+  float: left;
+}
+
+
+
+/* 下载豆瓣APP样式 */
+.db-landing .landing-container .landing .db-download .download-app {
+  background: rgb(0, 181, 29);
+  width: 130px;
+  height: 30px;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.db-landing .landing-container .landing .db-download .download-app button {
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.db-landing .landing-container .landing .db-download .app-code {
+  margin: 20px 0 0 0;
+}
+
+/* 二维码小图标背景图 */
+.db-landing .landing-container .landing .db-download .qrcode {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(0, 152, 25);
+  border-radius: 2px;
+  background-image: url("./img/qrcode.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10px;
+  position: relative;
+}
+
+/* 鼠标移动显示二维码 */
+.db-landing .landing-container .landing .db-download .qrcode .pop-up {
+  width: 230px;
+  height: 240px;
+  background-color: #fff;
+  border-radius: 2px;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  display: none;
+  z-index: 1;
+}
+
+/* 隐藏显示 */
+.db-landing .landing-container .landing .db-download .qrcode:hover .pop-up {
+  display: block;
+}
+
+/* 二维码图片大小 */
+.db-landing .landing-container .landing .db-download .qrcode .pop-up img {
+  width: 200px;
+  height: 216px;
+  margin-left: 15px;
+  padding: 15px 0;
+}
+
+.db-landing .landing-container .landing .db-download .qrcode .pop-up p {
+  color: #666;
+  text-align: center;
+}
+
+
+
+/* 右边登陆 */
+.db-landing .landing-container .landing .disembark {
+  float: left;
+  width: 305px;
+  height: 300px;
+  padding: 30px 0 10px 0;
+  font-size: 12px;
+}
+
+.db-landing .landing-container .landing .disembark .disembark-up {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+/* 短信登录／注册 */
+.db-landing .landing-container .landing .disembark .disembark-up .register {
+  float: left;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+
+/* 密码登录 */
+.db-landing .landing-container .landing .disembark .disembark-up .pwd {
+  float: right;
+  border-bottom: 1px solid #ccc;
+  color: #9B9B9B;
+}
+
+.db-landing .landing-container .landing .disembark .disembark-up .register,
+.db-landing .landing-container .landing .disembark .disembark-up .pwd {
+  width: 150px;
+  height: 25px;
+  line-height: 25px;
+}
+
+/* 显示一半的二维码样式 */
+.db-landing .landing-container .landing .disembark .disembark-up .pwd img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  top: -20px;
+}
+
+/* 阅读协议 */
+.db-landing .landing-container .landing .disembark .deal {
+  height: 40px;
+  line-height: 40px;
+  color: #9B9B9B;
+}
+
+.db-landing .landing-container .landing .disembark .deal span {
+  color: rgb(0, 181, 29);
+  cursor: pointer;
+}
+
+.db-landing .landing-container .landing .disembark .cell-phone {
+  position: relative;
+}
+
+/* 输入手机号文本框 */
+.db-landing .landing-container .landing .disembark .cell-phone input {
+  border: 1px solid #999;
+  padding-left: 45px;
+  background-color: #fff;
+}
+
+.db-landi .landing-container .landing .disembark .cell-phone input::placeholder {
+  color: #999;
+}
+
+/* +86 */
+.db-landing .landing-container .landing .disembark .cell-phone span {
+  display: inline-block;
+  width: 37px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  border-right: 1px solid #d1d1d1;
+  margin: 5px 0;
+  left: 0px;
+  cursor: pointer;
+}
+
+.db-landing .landing-container .landing .disembark .cell-phone input,
+.db-landing .landing-container .landing .disembark .auth-code input,
+.db-landing .landing-container .landing .disembark .db-button button {
+  height: 30px;
+  width: 304px;
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+/* 验证 */
+.db-landing .landing-container .landing .disembark .auth-code {
+  padding: 10px 0;
+  position: relative;
+}
+
+/* 输入验证码文本框 */
+.db-landing .landing-container .landing .disembark .auth-code input {
+  border: 1px solid #9B9B9B;
+  padding: 0px 19em 0 1em;
+  background-color: #fff;
+}
+
+/* 获取验证码 */
+.db-landing .landing-container .landing .disembark .auth-code p {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: rgb(0, 181, 29);
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+}
+
+/* 登陆豆瓣 */
+.db-landing .landing-container .landing .disembark .db-button button {
+  background-color: rgb(0, 181, 29);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* 收不到验证码 */
+.db-landing .landing-container .landing .disembark .no-auth-code {
+  height: 40px;
+  line-height: 30px;
+  text-align: right;
+  padding: 5px 0;
+  font-size: 12px;
+  color: rgb(0, 181, 29);
+  border-bottom: 1px solid #ccc;
+}
+
+/* 第三方登陆 */
+.db-landing .landing-container .landing .disembark .no-auth-code span {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  cursor: pointer;
+}
+
+.db-landing .landing-container .landing .disembark .third {
+  height: 45px;
+  color: #999;
+  line-height: 45px;
+}
+
+/* 微博微信图标样式 */
+.db-landing .landing-container .landing .disembark .third img {
+  width: 25px;
+  height: 25px;
+  vertical-align: -7px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+
+
+
+/* 热点内容 */
+
+.container {
+  background-color: #fff;
+}
+
+/* 左边热点内容 */
+.container .container-item .con-left {
+  width: 350px;
+}
+
+.container .container-item .con-left .title-item .a {
+  width: 24px;
+  text-align: center;
+}
+
+.container .container-item .con-left .item-img {
+  padding-top: 15px;
+  width: 170px;
+  font-size: 12px;
+  color: #9B9B9B;
+}
+
+.container .container-item .con-left .item-img img,
+.container .container-item .con-left .item-img .title-img {
+  width: 170px;
+}
+
+.container .container-item .con-left .item-img .title-img a {
+  text-align: center;
+}
+
+.container .container-item .con-left .item-img:nth-child(odd) {
+  margin-left: 5px;
+}
+
+
+/* 中间热点内容 */
+.container .container-item .con-center {
+  width: 315px;
+  font-size: 12px;
+  padding: 0px 20px;
+}
+
+.container .container-item .con-center .first-content {
+  padding: 30px 0 10px 0;
+  line-height: 20px;
+}
+
+.container .container-item .con-center .diary {
+  color: #9B9B9B;
+}
+
+.container .container-item .con-center .second-content {
+  line-height: 30px;
+}
+
+.container .container-item .con-center .second-content .second-item {
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+
+/* 右边热点内容 */
+.container .container-item .con-right,
+.container .container-item .con-right .advertising img {
+  width: 280px;
+}
+
+.container .container-item .con-right .hot .a {
+  width: 60px;
+  text-align: center;
+}
+
+.container .container-item .con-right .hot {
+  padding: 10px 0;
+}
+
+
+.container .container-item .con-right .con-itile p:last-child {
+  color: #aaaaaa;
+  font-size: 13px;
+}
+
+.itile1,
+.itile2,
+.itile3,
+.itile4,
+.itile5,
+.itile6 {
+  padding: 5px 0;
+  line-height: 20px;
+}
+
+
+
+
+
+/* 豆瓣时间 */
+
+.db-time {
+  background-color: #f7f7f7;
+}
+
+/* 标题上部分 */
+.db-time .audio-area .db-title {
+  height: 80px;
+}
+
+.db-time .audio-area .db-title .time h3 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #494949;
+  margin-top: 30px;
+}
+
+.db-time .audio-area .db-title .column,
+.db-time .audio-area .db-title .time {
+  float: left;
+}
+
+.db-time .audio-area .db-title .column {
+  padding-top: 7px;
+  margin: 30px 0 0 20px;
+}
+
+.db-time .audio-area .db-title .column a {
+  width: 24px;
+  text-align: center;
+}
+
+
+/* 音频部分 */
+.db-time .audio-area .audio-centainer {
+  width: 700px;
+  margin: 0 auto;
+}
+
+/* 设置音频图片的样式 */
+.db-time .audio-area .db-audio {
+  width: 100px;
+  height: 220px;
+  font-size: 13px;
+  text-align: center;
+  float: left;
+  margin: 0 50px 0 0;
+
+}
+
+/* 5n:选中五的倍数的音频、右边距为零 */
+.db-time .audio-area .audio-centainer .db-audio:nth-child(5n) {
+  margin-right: 0px;
+}
+
+.db-time .audio-area .audio-centainer .db-audio.audio-top {
+  margin-top: 45px;
+}
+
+.db-time .audio-area .db-audio a {
+  position: relative;
+}
+
+.db-time .audio-area .db-audio .audio-ccolumn p {
+  color: #aaaaaa;
+  padding-top: 10px;
+}
+
+/* 图片大小宽度 */
+.db-time .audio-area .db-audio .con-audio img {
+  width: 100px;
+}
+
+/* 小耳机图标定位 */
+.db-time .audio-area .db-audio .con-audio .ej-audio {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+
+
+
+/* 豆瓣电影 */
+
+.db-mover {
+  background-color: #fff;
+}
+
+/* 电影栏目左边部分 */
+.db-mover .mover-container .mover-nav {
+  color: #37a;
+}
+
+/* 正在热映中间部分样式 */
+.db-mover .mover-container .mover-hit {
+  width: 535px;
+}
+
+.db-mover .mover-container .mover-hit .mover {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* 浮动、设置电影图片的外边距 */
+.db-mover .mover-container .mover-hit .mover .mover-fig {
+  margin: 15px 33px 0 0;
+}
+
+/* 电影4的倍数图片右外边距为零 */
+.db-mover .mover-container .mover-hit .mover .mover-fig:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption {
+  text-align: center;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+/* 行内块元素 */
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-rating span {
+  display: inline-block;
+}
+
+/* 星星背景图 */
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-rating .rating {
+  background-image: url("./img/db-mover/rating.png");
+  background-repeat: no-repeat;
+  background-size: 60px 130px;
+  background-position-y: -12px;
+  width: 60px;
+  height: 12px;
+}
+
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-rating .score {
+  width: 20px;
+  color: #e09015;
+}
+
+/* 选座购票样式 */
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-button {
+  width: 70px;
+  margin: 0 auto;
+  background-color: #1c8bd0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-button:hover {
+  background: #047fcb;
+}
+
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-button button {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 设置星数位置样式 */
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-rating .rating2 {
+  background-position-y: -36px;
+}
+
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-rating .rating3 {
+  background-position-y: -59px;
+}
+
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-rating .rating4 {
+  background-position-y: -24px;
+}
+
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-rating .rating5 {
+  background-position-y: -36px;
+}
+
+/* 暂无评分 */
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-rating .rating6 {
+  background-position-y: -36px;
+}
+
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-rating .rating7 {
+  background-position-y: -59px;
+}
+
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-rating .rating8 {
+  background-position-y: -47px;
+}
+
+/* 第6个影片没有评分、设置样式 */
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-rating .score6 {
+  width: 100px;
+}
+
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption6 {
+  line-height: 25px;
+}
+
+/* 右边栏目部分 */
+.db-mover .mover-container .mover-classify {
+  width: 250px;
+  float: left;
+  margin-left: 60px;
+}
+
+/* 影片分类  */
+.db-mover .mover-container .mover-classify .classify-child {
+  margin: 10px 0;
+}
+
+.db-mover .mover-container .mover-classify .classify-child li {
+  float: left;
+  width: 60px;
+  margin: 2px 0;
+}
+
+/* 近期热门 */
+.db-mover .mover-container .mover-classify .db-list .list-title {
+  padding: 15px 0;
+}
+
+.db-mover .mover-container .mover-classify .db-list .list-centent .con-centent {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* 左右与内边距 */
+.db-mover .mover-container .mover-classify .db-list .list-centent .con-centent a {
+  padding: 0 5px;
+}
+
+
+
+
+/* 小组 */
+
+.db-team {
+  background-color: #f7f7f7;
+}
+
+/* 小组左边 */
+.db-team .team-container .con-team {
+  color: #017a85;
+}
+
+/* 小组中间 */
+.db-team .team-container .group .group-team {
+  width: 275px;
+  margin-top: 40px;
+}
+
+/* 图片大小 */
+.db-team .team-container .group .group-img img {
+  width: 48px;
+}
+
+/* 选中第一个p元素 */
+.db-team .team-container .group .group-team .group-centent p:first-child {
+  font-size: 13px;
+}
+
+/* 选中最后一个p元素 */
+.db-team .team-container .group .group-team .group-centent p:last-child {
+  color: #999;
+}
+
+.db-team .team-container .group .group-team .group-centent {
+  margin-left: 15px;
+  line-height: 20px;
+}
+
+
+/* 小组右间 */
+.db-team .team-container .cation .cation-title {
+  padding-bottom: 10px;
+}
+
+.db-team .team-container .cation .cation-interest {
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+.db-team .team-container .cation .cation-interest li {
+  float: left;
+  width: 42px;
+  color: #017a85;
+}
+
+
+
+
+/* 读书 */
+
+.db-book {
+  background-color: #fff;
+  color: #111;
+}
+
+/* 左边 */
+.db-book .book-container .book .book-nav li {
+  color: #111;
+}
+
+.db-book .book-container .book .book-img p {
+  line-height: 15px;
+}
+
+.db-book .book-container .book .book-img>span {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-image: url("./img/book/book.jpg");
+  border-radius: 10px;
+  /* 给图片添加阴影 */
+  box-shadow: 2px 2px 3px #999;
+  cursor: pointer;
+}
+
+/* 中间 */
+.db-book .book-container .e-books .e-books-team .e-books-container {
+  width: 520px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.db-book .book-container .e-books .e-books-team .e-books-container .e-books-centent {
+  text-align: center;
+  line-height: 20px;
+}
+
+.db-book .book-container .e-books .e-books-team .e-books-container .e-books-centent p:first-child {
+  font-size: 13px;
+  width: 101px;
+  padding: 5px 0 5px 0;
+}
+
+.db-book .book-container .e-books .e-books-team .e-books-container .e-books-centent .e-books-button {
+  width: 70px;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  margin-left: 15px;
+  background-color: #999a95;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.db-book .book-container .e-books .e-books-team .e-books-container .e-books-centent .e-books-button:hover {
+  background-color: #878882;
+}
+
+.db-book .book-container .e-books .e-books-team .e-books-container .e-books-centent .e-books-button button {
+  color: #fff;
+  cursor: pointer;
+}
+
+.db-book .e-books .e-books-team .e-books-container .e-books-q {
+  margin: 0 40px 0 0;
+}
+
+.db-book .e-books .e-books-team .e-books-container .e-books-q:nth-child(4) {
+  margin-right: 0px;
+}
+
+.db-book .e-books .e-books-down {
+  padding: 40px 0;
+}
+
+/* 右边 */
+.db-book .book-label .label-classify {
+  height: 60px;
+  margin-top: 10px;
+  border-bottom: 1px solid #eaeaea;
+  line-height: 25px;
+}
+
+.db-book .book-label .label-classify:last-child {
+  border-bottom: none;
+}
+
+.db-book .book-label .label-classify ul li {
+  height: 20px;
+  line-height: 21px;
+  margin: 0 11px 0 0;
+}
+
+.db-book .book-label .label-classify li:first-child {
+  color: #999;
+}
+
+
+
+
+/* 音乐 */
+
+.db-music {
+  background-color: #f7f7f7;
+}
+
+/* 左边 */
+.db-music .music-container .music {
+  color: #555d53;
+}
+
+.db-music .music-container .music .music-nav li:first-child {
+  color: #f38c00;
+}
+
+.db-music .music-container .music .music-img1,
+.db-music .music-container .music .music-img2 {
+  line-height: 15px;
+}
+
+.db-music .music-container .music .music-img1 span,
+.db-music .music-container .music .music-img2 span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+
+.db-music .music-container .music .music-img1 span {
+  background-image: url("./img/book/book.jpg");
+  background-position-x: -250px;
+}
+
+.db-music .music-container .music .music-img2 span {
+  background-image: url("./img/book/book.jpg");
+  background-position-x: -50px;
+}
+
+
+/* 中间 */
+.db-music .music-container .music-hit .music {
+  width: 518px;
+  margin: 15px 0 0 15px;
+}
+
+.db-music .music-container .music-hit .music .music-fig {
+  line-height: 20px;
+  float: left;
+}
+
+.db-music .music-container .music-hit .music .music-fig,
+.db-music .music-container .music-hit .music .music-fig .music-img img {
+  font-size: 12px;
+  width: 92px;
+  display: block;
+}
+
+.db-music .music-container .music-hit .music .music-fig {
+  margin: 0 50px 0 0;
+}
+
+.db-music .music-container .music-hit .music .music-fig:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.db-music .music-container .music-hit .music .music-fig .music-caption {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.db-music .music-container .music-hit .music .music-fig .music-caption .music-ti1 .music-list {
+  padding-right: 5px;
+}
+
+.db-music .music-container .music-hit .music .music-fig .music-rating .rating {
+  display: inline-block;
+  background-image: url("./img/db-mover/rating.png");
+  width: 53px;
+  height: 10px;
+  background-size: 50px 111px;
+  background-repeat: no-repeat;
+  background-position-y: -101px;
+}
+
+/* 评分数字颜色公共样式 */
+.db-music .music-container .music-hit .music .music-fig .music-rating .score {
+  color: #e09015;
+}
+
+/* 评分星星公共样式 */
+.db-music .music-container .music-hit .music .music-fig .music-rating .rating3 {
+  background-position-y: -20px;
+}
+
+.db-music .music-container .music-hit .music .music-fig .music-rating .rating5 {
+  background-position-y: -10px;
+}
+
+.db-music .music-container .music-hit .music .music-fig .music-rating .rating6 {
+  background-position-y: -20px;
+}
+
+.db-music .music-container .music-hit .music .music-fig .music-rating .rating7 {
+  background-position-y: -31px;
+}
+
+.db-music .music-container .music-hit .music .music-fig .music-rating .rating8 {
+  background-position-y: -41px;
+}
+
+.db-music .music-container .music-down {
+  margin-top: 25px;
+}
+
+.db-music .music-container .music-hit .music .music-fig .music-caption .music-size p {
+  color: #111;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.db-music .music-container .music-hit .music .music-fig .music-img>a {
+  position: relative;
+}
+
+.db-music .music-container .music-hit .music .music-fig .music-img .music-position {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+
+/* 右边 */
+.db-music .music-container .music-popular .popular-item {
+  font-size: 12px;
+  height: 60px;
+  margin-top: 15px;
+}
+
+.db-music .music-container .music-popular .popular-item .popular-img,
+.db-music .music-container .music-popular .popular-item .popular-centent {
+  margin-left: 15px;
+}
+
+.db-music .music-container .music-popular .popular-item .popular-centent {
+  line-height: 20px;
+}
+
+.db-music .music-container .music-popular .popular-item .popular-centent .popular-color {
+  color: #999;
+}
+
+/* 设置a元素宽高 */
+.db-music .music-container .music-popular .popular-item .popular-img>a {
+  /* 相对定位 */
+  position: relative;
+}
+
+/* 创建蒙层 */
+.db-music .music-container .music-popular .popular-item .popular-img .obscuration {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* 绝对定位 */
+  position: absolute;
+  top: -35.2px;
+  left: 0px;
+  /* 隐藏 */
+  display: none;
+}
+
+/* 隐藏显示 */
+.db-music .music-container .music-popular .popular-item .popular-img:hover .obscuration {
+  display: block;
+}
+
+/* 用伪类元素创建三角形 */
+.db-music .music-container .music-popular .popular-item .popular-img .obscuration::after {
+  content: "";
+  display: inline-block;
+  border-left: 8px solid #fff;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  /* 绝对定位 */
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
+
+
+
+
+/* 豆品 */
+
+.db-doupin {
+  background: #fff;
+}
+
+/* 豆品左边 */
+
+
+/* 豆品中间 */
+.db-doupin .doupin-container .goods .goods-book {
+  width: 250px;
+  font-size: 16px;
+  float: left;
+  margin: 15px 20px 20px 0;
+}
+
+.db-doupin .doupin-container .goods .goods-book:nth-child(2n+1) {
+  margin-right: 0px;
+}
+
+.db-doupin .doupin-container .goods .goods-book .goods-img img {
+  width: 250px;
+  height: 230px;
+  display: block;
+}
+
+.db-doupin .doupin-container .goods .goods-book .goods-img>a {
+  position: relative;
+}
+
+/* 创建蒙层样式 */
+.db-doupin .doupin-container .goods .goods-book .goods-img>a::after {
+  content: "";
+  display: inline-block;
+  width: 250px;
+  height: 230px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /* 隐藏 */
+  display: none;
+}
+
+/* 显示隐藏 */
+.db-doupin .doupin-container .goods .goods-book .goods-img:hover>a::after {
+  display: block;
+}
+
+.db-doupin .doupin-container .goods .goods-book .goods-content {
+  margin-top: 10px;
+}
+
+.db-doupin .doupin-container .goods .goods-book .goods-content .content-a {
+  width: 185px;
+  float: left;
+}
+
+.db-doupin .doupin-container .goods .goods-book .goods-content .price {
+  width: 35px;
+  float: right;
+  color: #E55457;
+}
+
+.db-doupin .doupin-container .goods .goods-book .goods-content .price1 {
+  width: 45px;
+}
+
+
+/* 豆品右边 */
+.db-doupin .doupin-container .activity .activity-top .activity-banner {
+  padding: 15px 0 5px 0;
+}
+
+.db-doupin .doupin-container .activity .activity-top .activity-banner img {
+  width: 100%;
+}
+
+.db-doupin .doupin-container .activity .activity-top .activity-centent p,
+.db-doupin .doupin-container .activity .activity-bottom .activity-matter p {
+  color: #3377A9;
+  line-height: 20px;
+}
+
+.db-doupin .doupin-container .activity .activity-bottom {
+  margin-top: 30px;
+}
+
+.db-doupin .doupin-container .activity .activity-bottom .activity-matter {
+  margin: 15px 0 45px 0;
+}
+
+.db-doupin .doupin-container .activity .activity-bottom .activity-matter .activity-number,
+.db-doupin .doupin-container .activity .activity-bottom .activity-matter .activity-date {
+  color: #6A6A6A;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.db-doupin .doupin-container .activity .activity-bottom .activity-matter .activity-number {
+  float: left;
+}
+
+.db-doupin .doupin-container .activity .activity-bottom .activity-matter .activity-date {
+  float: right;
+}
+
+.db-doupin .doupin-container .activity .activity-top .activity-banner:hover>a {
+  position: relative;
+}
+
+/* 创建蒙层样式 */
+.db-doupin .doupin-container .activity .activity-top .activity-banner>a::after {
+  content: "";
+  display: inline-block;
+  width: 250px;
+  height: 87px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 0px;
+  top: -71px;
+  /* 隐藏 */
+  display: none;
+}
+
+/* 显示隐藏 */
+.db-doupin .doupin-container .activity .activity-top .activity-banner:hover>a::after {
+  display: block;
+}
+
+
+/* 同城 */
+.db-local {
+  background-color: #f7f7f7;
+  color: #643;
+}
+
+/* 同城左边 */
+.db-local .local-container .local-left .local-nav li:first-child {
+  color: #ec5303;
+}
+
+
+/* 同城中间  */
+.db-local .local-container .local-center .center-title span,
+.db-local .local-container .local-center .right-content p:first-child {
+  color: #643;
+}
+
+.db-local .local-container .local-center .center-img {
+  width: 251px;
+  margin: 15px 20px 0 0;
+}
+
+.db-local .local-container .local-center .right-content {
+  margin-left: 10px;
+  width: 171px;
+  line-height: 18px;
+}
+
+.db-local .local-container .local-center .right-content p:first-child {
+  font-size: 13px;
+}
+
+.db-local .local-container .local-center .right-content p,
+.db-local .local-container .local-center .right-content .site p {
+  font-size: 12px;
+  color: #6A6A6A;
+}
+
+
+/* 同城右边 */
+.db-local .local-container .local-right .music-type {
+  margin-top: 15px;
+}
+
+.db-local .local-container .local-right .music-type .type-title p {
+  color: #333;
+  font-size: 14px;
+}
+
+.db-local .local-container .local-right .music-type .type-classify li {
+  color: #643;
+  margin: 5px 15px 0 0;
+}
+
+
+
+/* 页脚 */
+.footer-down {
+  background-color: #fff;
+}
+
+.footer-down .footer-container {
+  color: #999;
+}
+
+.footer-down .footer-container .footer-line {
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  border-top: 1px dashed #999;
+  line-height: 20px;
+}
+
+/* 页脚左边 */
+.footer-down .footer-container .footer-left {
+  width: 470px;
+  float: left;
+}
+
+.footer-down .footer-container .footer-left .footer-centent {
+  line-height: 20px;
+}
+
+.footer-down .footer-container .footer-left .footer-centent .footer-img1 {
+  height: 16px;
+  background-image: url("./img/db-footer/tousu1.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 235px;
+  background-position-y: 3px;
+}
+
+.footer-down .footer-container .footer-left .footer-centent .footer-img2 {
+  height: 16px;
+  background-image: url("./img/db-footer/jubao.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 145px;
+  background-position-y: 3px;
+}
+
+.footer-down .footer-container .footer-left .footer-centent .footer-img3 img {
+  width: 16px;
+  height: 16px;
+  vertical-align: -4px;
+}
+
+/* 页脚右边 */
+.footer-down .footer-container .footer-right {
+  width: 450px;
+  float: right;
+}
+.footer-down .footer-container .footer-right .right-nav{
+  margin-left: 8px;
+}
+.footer-down .footer-container .footer-right .right-nav li {
+  display: inline-block;
+  width: 60px;
+  position: relative;
+}
+
+/* 在li里创建小圆点 */
+.footer-down .footer-container .footer-right .right-nav li::after {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border: 1.2px solid #37a;
+  border-radius: 50%;
+  background-color: #37a;
+  position: absolute;
+  right: 2px;
+  top: 7px;
+}
+/* 第二个li字多一个,宽度单独处理 */
+.footer-down .footer-container .footer-right .right-nav li:nth-child(2){
+width: 70px;
+}
+.footer-down .footer-container .footer-right .right-nav li:nth-child(7){
+width: 50px;
+}
+/* 隐藏 */
+.footer-down .footer-container .footer-right .right-nav li:last-child::after {
+  display: none;
+}

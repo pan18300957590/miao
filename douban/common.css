@@ -1,0 +1,302 @@
+/* 公共样式 */
+
+
+
+
+/* 滚动条宽度 */
+::-webkit-scrollbar {
+  /* 垂直方向 */
+  width: 15px;
+  /* 水平方向 */
+  height: 15px;
+}
+
+/* 滚动条滚动块的样式 */
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* 豆瓣时间、电影等每一个大区域距离底部的内边距 */
+.db-time,
+.db-mover,
+.db-team,
+.container,
+.db-book,
+.db-music,
+.db-doupin,
+.db-local,
+.footer-down {
+  padding-bottom: 30px;
+}
+
+/* 热点、豆瓣时间等外边div容器居中公共样式 */
+.container .container-item,
+.db-time .audio-area,
+.db-mover .mover-container,
+.db-team .team-container,
+.db-book .book-container,
+.db-music .music-container,
+.db-doupin .doupin-container,
+.db-local .local-container,
+.footer-down .footer-container {
+  width: 960px;
+  padding-top: 35px;
+  margin: 0 auto;
+}
+
+/* 电影、小组等左边区块的宽度 */
+.db-mover .mover-container .mover-nav,
+.db-team .team-container .con-team,
+.db-book .book-container .book,
+.db-music .music-container .music,
+.db-doupin .doupin-container .doupin-nav,
+.db-local .local-container .local-left {
+  width: 100px;
+  line-height: 25px;
+}
+
+/* 选中电影小组读书等第一个元素样式 */
+.db-mover .mover-container .mover-nav li:first-child,
+.db-team .team-container .con-team li:first-child,
+.db-book .book-container .book .book-nav li:first-child,
+.db-music .music-container .music .music-nav li:first-child,
+.db-doupin .doupin-container .doupin-nav p,
+.db-local .local-container .local-left .local-nav li:first-child {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+/* 中间宽度 */
+.db-team .team-container .group,
+.db-book .e-books,
+.db-music .music-container .music-hit,
+.db-doupin .doupin-container .goods,
+.db-local .local-container .local-center{
+  width: 550px;
+  margin-left: 10px;
+}
+
+/*右边宽度 */
+.db-team .team-container .cation,
+.db-book .book-label,
+.db-music .music-container .music-popular,
+.db-doupin .doupin-container .activity,
+.db-local .local-container .local-right{
+  margin-left: 50px;
+  width: 250px;
+}
+
+/* new小图标 */
+.db-mover .mover-container .mover-nav li img,
+.db-book .book-container .book .book-nav li img {
+  vertical-align: 5px;
+}
+
+/* 图片宽度为100 */
+.db-mover .mover-container .mover-hit .mover .mover-fig,
+.db-mover .mover-container .mover-hit .mover .mover-img img,
+.db-book .book-container .e-books .e-books-team .e-books-q,
+.db-book .book-container .e-books .e-books-team .e-books-q .e-books-img img {
+  width: 100px;
+}
+
+.container .container-item .con-left,
+.container .container-item .con-center,
+.container .container-item .con-right,
+.db-mover .mover-container .mover-nav,
+.db-mover .mover-container .mover-hit,
+.db-mover .mover-container .mover-hit .mover .mover-fig,
+.db-team .team-container .con-team,
+.db-team .team-container .group,
+.db-team .team-container .cation,
+.db-team .team-container .group .group-img,
+.db-team .team-container .group .group-centent,
+.db-team .team-container .group .group-team,
+.db-book .book-container .book,
+.db-book .book-container .e-books,
+.db-book .book-container .book-label,
+.db-book .e-books .e-books-team .e-books-container .e-books-q,
+.db-music .music-container .music,
+.db-music .music-container .music-hit,
+.db-music .music-container .music-popular,
+.db-music .music-container .music-popular .popular-item .popular-list,
+.db-music .music-container .music-popular .popular-item .popular-img,
+.db-music .music-container .music-popular .popular-item .popular-centent,
+.db-doupin .doupin-container .doupin-nav,
+.db-doupin .doupin-container .goods,
+.db-doupin .doupin-container .activity,
+.db-local .local-container .local-left,
+.db-local .local-container .local-center,
+.db-local .local-container .local-right,
+.db-local .local-container .local-center .center-img .left-img,
+.db-local .local-container .local-center .center-img .right-content,
+.db-local .local-container .local-center .center-img,
+.db-local .local-container .local-right .music-type .type-classify li{
+  float: left;
+}
+
+
+/* 热点内容和热门等话题公共样式 */
+.container .container-item .con-left .title-item,
+.container .container-item .con-right .hot,
+.db-time .audio-area .db-title .column p,
+.db-mover .mover-container .mover-hit .mover-title p,
+.db-mover .mover-container .mover-classify .classify-title p,
+.db-mover .mover-container .mover-classify .db-list .list-title p,
+.db-team .team-container .group .group-title p,
+.db-team .team-container .cation .cation-title p,
+.db-book .e-books .e-books-title p,
+.db-book .book-label .label-title p,
+.db-music .music-container .music-hit .music-title p,
+.db-music .music-container .music-popular .popular-title p,
+.db-doupin .doupin-container .goods .goods-title p,
+.db-doupin .doupin-container .activity .activity-top .activity-title p,
+.db-doupin .doupin-container .activity .activity-bottom .activity-caption p,
+.db-local .local-container .local-center .center-title p,
+.db-local .local-container .local-right .right-title p {
+  color: #072;
+  font-size: 15px;
+}
+
+/* 热点内容和热门等话题公共样式 */
+.container .container-item .con-left .title-item .gd,
+.container .container-item .con-right .hot .hot-item,
+.db-time .audio-area .db-title .column span,
+.db-mover .mover-container .mover-hit .mover-title span,
+.db-mover .mover-container .mover-classify .classify-title span,
+.db-mover .mover-container .mover-classify .classify-child a,
+.db-mover .mover-container .mover-classify .db-list .list-title span,
+.db-mover .mover-container .mover-classify .db-list .list-centent .con-centent,
+.db-team .team-container .group .group-title span,
+.db-team .team-container .group .group-team .group-centent p:last-child,
+.db-team .team-container .cation .cation-interest a,
+.db-book .book-container .book .book-img p,
+.db-book .e-books .e-books-title span,
+.db-book .e-books .e-books-team .e-books-container .e-books-q .e-books-centent .e-books-size,
+.db-book .e-books .e-books-team .e-books-container .e-books-q .e-books-centent button,
+.db-book .book-label .label-title span,
+.db-book .book-label .label-classify ul li,
+.db-music .music-container .music .music-img1 p,
+.db-music .music-container .music .music-img2 p,
+.db-music .music-container .music-hit .music-title span,
+.db-music .music-container .music-popular .popular-title span,
+.db-doupin .doupin-container .goods .goods-title span,
+.db-doupin .doupin-container .activity .activity-bottom .activity-caption span,
+.db-local .local-container .local-center .center-title span,
+.db-local .local-container .local-right .music-type .type-classify li,
+.footer-down .footer-container {
+  font-size: 12px;
+}
+
+/* 鼠标移入公共样式 */
+.container .container-item .con-left .title-item .a:hover,
+.container .container-item .con-left .item-img .title-img a:hover,
+.container .container-item .con-center p a:hover,
+.container .container-item .con-right .hot .a:hover,
+.container .container-item .con-right .con-itile a:hover,
+.db-time .audio-area .db-title .column a:hover,
+.db-time .audio-area .db-title .time h3:hover,
+.db-time .audio-area .db-audio .audio-itile a:hover,
+.db-mover .mover-container .mover-nav a:hover,
+.db-mover .mover-container .mover-hit .mover-title a:hover,
+.db-mover .mover-container .mover-hit .mover .mover-fig .mover-caption .mover-ti a:hover,
+.db-mover .mover-container .mover-classify .classify-title a:hover,
+.db-mover .mover-container .mover-classify .classify-child a:hover,
+.db-mover .mover-container .mover-classify .db-list .list-title a:hover,
+.db-mover .mover-container .mover-classify .db-list .list-centent .con-centent a:hover,
+.db-team .team-container .con-team a:hover,
+.db-team .team-container .group .group-title a:hover,
+.db-team .team-container .group .group-team .group-centent a:hover,
+.db-team .team-container .cation .cation-interest a:hover,
+.db-book .book-container .book a:hover,
+.db-book .e-books .e-books-title a:hover,
+.db-book .book-container .e-books .e-books-team .e-books-container .e-books-centent a:hover,
+.db-book .book-label .label-title a:hover,
+.db-book .book-label .label-classify a:hover,
+.db-music .music-container .music a:hover,
+.db-music .music-container .music-hit .music-title a:hover,
+.db-music .music-container .music-popular .popular-title a:hover,
+.db-music .music-container .music-popular .popular-item .popular-centent a:hover,
+.db-doupin .doupin-container .doupin-nav a:hover,
+.db-doupin .doupin-container .goods .goods-title a:hover,
+.db-doupin .doupin-container .goods .goods-book .goods-content .content-a a:hover,
+.db-doupin .doupin-container .activity .activity-top .activity-centent a:hover,
+.db-doupin .doupin-container .activity .activity-bottom .activity-caption a:hover,
+.db-doupin .doupin-container .activity .activity-bottom .activity-matter a:hover,
+.db-local .local-container .local-left .local-nav a:hover,
+.db-local .local-container .local-center .center-title a:hover,
+.db-local .local-container .local-center .right-content a:hover,
+.db-local .local-container .local-right .music-type .type-title a:hover,
+.db-local .local-container .local-right .music-type .type-classify a:hover,
+.footer-down .footer-container a:hover {
+  color: #fff;
+  background-color: #37a;
+}
+
+/* 鼠标按下显示伪类样式 */
+.db-doupin .doupin-container .goods .goods-book .goods-content .content-a a:active,
+.db-doupin .doupin-container .activity .activity-top .activity-centent a:active,
+.db-doupin .doupin-container .activity .activity-bottom .activity-caption a:active,
+.db-doupin .doupin-container .activity .activity-bottom .activity-matter a:active,
+.db-local .local-container .local-left .local-nav a:active,
+.db-local .local-container .local-center .center-title a:active,
+.db-local .local-container .local-center .right-content a:active,
+.db-local .local-container .local-right .music-type .type-title a:active,
+.db-local .local-container .local-right .music-type .type-classify a:active,
+.footer-down .footer-container a:active {
+  background-color: #f93;
+  color: #fff;
+}
+
+/* 行块盒 */
+.container .container-item .con-left .title-item .a,
+.container .container-item .con-left .item-img,
+.container .container-item .con-left .item-img .title-img a,
+.container .container-item .con-right .hot .a,
+.db-time .audio-area .db-title .column a,
+.db-book .book-label .label-classify ul li {
+  display: inline-block;
+}
+
+/* “更多”字体颜色为浅蓝色 */
+.container .container-item .con-left .title-item .a,
+.container .container-item .con-left .item-img .title-img a,
+.container .container-item .con-center a,
+.container .container-item .con-right .hot .a,
+.container .container-item .con-right .con-itile p:first-child,
+.db-time .audio-area .db-title .column a,
+.db-mover .mover-container .mover-hit .mover-title a,
+.db-mover .mover-container .mover-classify .classify-title a,
+.db-mover .mover-container .mover-classify .classify-child a,
+.db-mover .mover-container .mover-classify .db-list .list-title a,
+.db-mover .mover-container .mover-classify .db-list .list-centent .con-centent a,
+.db-team .team-container .group .group-title a,
+.db-team .team-container .group .group-team .group-centent p:first-child,
+.db-doupin .doupin-container .doupin-nav p,
+.db-doupin .doupin-container .goods .goods-title span,
+.db-doupin .doupin-container .goods .goods-book .goods-content .content-a,
+.db-doupin .doupin-container .activity .activity-bottom .activity-caption span,
+.footer-down .footer-container a{
+  color: #37a;
+}
+
+/* “更多”字体颜色 */
+.db-book .e-books .e-books-title span,
+.db-book .book-container .e-books .e-books-team .e-books-container .e-books-centent p:first-child,
+.db-book .book-label .label-title a,
+.db-book .book-label .label-classify a,
+.db-music .music-container .music-hit .music-title a,
+.db-music .music-container .music-popular .popular-title span {
+  color: #614e3c;
+}
+
+/* 左边的底部图标上边的距离 */
+.db-book .book-container .book .book-img,
+.db-music .music-container .music .music-img1,
+.db-music .music-container .music .music-img2 {
+  margin-top: 20px;
+}
