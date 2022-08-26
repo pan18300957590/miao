@@ -300,3 +300,8 @@
 .db-music .music-container .music .music-img2 {
   margin-top: 20px;
 }
+
+
+.db-time .audio-area .audio-centainer .db-audio .con-audio img{
+  transform: translate(-10px,200px);
+}

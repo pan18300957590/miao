@@ -1117,12 +1117,14 @@
   position: relative;
 }
 
-/* 创建蒙层 */
-.db-music .music-container .music-popular .popular-item .popular-img .obscuration {
+/* 创建蒙层、添加背景图标 */
+.db-music .music-container .music-popular .popular-item .popular-img a::after{
+  content: "";
   display: inline-block;
   width: 48px;
   height: 48px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6) url("./img/db-music/bf.png") no-repeat center;
+  background-size: 15px;
   /* 绝对定位 */
   position: absolute;
   top: -35.2px;
@@ -1132,21 +1134,8 @@
 }
 
 /* 隐藏显示 */
-.db-music .music-container .music-popular .popular-item .popular-img:hover .obscuration {
+.db-music .music-container .music-popular .popular-item .popular-img:hover a::after  {
   display: block;
-}
-
-/* 用伪类元素创建三角形 */
-.db-music .music-container .music-popular .popular-item .popular-img .obscuration::after {
-  content: "";
-  display: inline-block;
-  border-left: 8px solid #fff;
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  /* 绝对定位 */
-  position: absolute;
-  top: 16px;
-  left: 20px;
 }
 
 
